@@ -1,0 +1,313 @@
+/* Estilos do projeto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial;
+    background-color: #f9f8f8;
+    color: #023047;
+}
+
+/* Estilo dos formulários de login, e de criação de conta de usuário */
+
+#authForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+#authForm form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    gap: 4px;
+    width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#authForm form .description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    text-align: justify;
+    border-left: 7px solid #d2dbe9;
+    padding-left: 10px;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#authForm form input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1.5px solid #d2dbe9;
+    border-radius: 4px;
+    outline: none;
+}
+
+#authForm form input:focus {
+    border-color: #7690b7;
+}
+
+#authForm form label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.btn,
+.link {
+    background-color: #65b965;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    margin: 20px 0 0 0;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.link {
+    margin: 0px;
+    background-color: #93C572;
+}
+
+#authForm form .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#authForm form .logo img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+#authForm form .logo h1 {
+    margin: 0;
+    font-size: 2.3em;
+    font-weight: bold;
+    color: #676b73;
+}
+
+/* Mensagens */
+
+.message-error,
+.message-success {
+    padding: 15px 25px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.message-error {
+    background-color: #DC7633;
+}
+
+.message-success {
+    background-color: #65b965;
+}
+
+.alert-danger {
+    margin-top: 5px;
+    color: red;
+}
+
+/* Navbar */
+
+nav {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+nav .logo img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #676b73;
+    padding: 0px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color:black;
+}
+
+nav i {
+    font-size: 25px;
+}
+
+#container {
+    background: white;
+    padding: 25px 30px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#container #commomForm {
+    display: flex;
+    width: 600px;
+    margin: auto;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#container #commomForm label {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#container #commomForm hr {
+    margin-bottom: 20px;
+}
+
+#container #commomForm input {
+    font-size: 14px;
+    padding: 15px;
+    border: 1.5px solid #d2dbe9;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 10px;
+}
+
+/* Estilo das tabelas */
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+table i {
+    font-size: 17px;
+}
+
+tbody td {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+tbody tr:hover {
+    background-color: #f9f8f8;
+}
+
+thead th {
+    text-align: right;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+th,
+td {
+    padding: 20px;
+    vertical-align: baseline;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+thead tr {
+    background-color: #01987a;
+    color: white;
+}
+
+tbody .actions-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.actions-group .btn {
+    margin: 0px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bg-danger {
+    background-color: #FF4433;
+}
+
+.bg-primary {
+    background-color: #4169E1;
+}
+
+.bg-secondary {
+    background-color: #B2BABB;
+}
+
+@media screen and (max-width: 500px) {
+    table td{
+        font-size: 3vw;
+    }
+    table th{
+        font-size: 3vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    .content-header .link{
+        padding: 8px;
+        font-size: 2.5vw;
+    }
+}
